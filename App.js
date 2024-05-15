@@ -16,6 +16,6 @@ let faveCar = {
     name: "Audi",
     year: 2024,
     gearBox: "manual"
-}
+};
 
-console.log(typeof faveCar)
+console.log(typeof faveCar);
