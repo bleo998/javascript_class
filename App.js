@@ -1,38 +1,48 @@
-console.log("test");
+// 1.So pomos na "if", "else if" i "else napravete soodvetna proverka za temperaturata koja sto ke ja stavite vie prvicno vo edna varijabla.
+// Print "It's freezing!" if the temperature is below 0.
+// Print "It's cold." if the temperature is between 0 and 15.
+// Print "It's warm." if the temperature is between 16 and 25.
+// Print "It's hot!" if the temperature is above 25.
+// 2. Proverka za vozrast:
+// 0-2 years: "Infant"
+// 3-12 years: "Child"
+// 13-19 years: "Teenager"
+// 20-59 years: "Adult"
+// 60 years and above: "Senior"
 
-let stringVar = "Hello World!";
-console.log(typeof stringVar);
+// 3. So pomos na ternary operator proverete dali eden broj e paren ili neparen.
 
-let numVar = 404808;
-console.log(typeof numVar);
+// Vezba 1
 
-let booleanVar = true;
-console.log(typeof booleanVar);
-
-let fruits = ["banana", "apple", "cherry", "orange"];
-console.log(typeof fruits);
-
-let faveCar = {
-  name: "Audi",
-  year: 2024,
-  gearBox: "manual",
-};
-
-console.log(typeof faveCar);
-
-let rezultat;
-let prvSc;
-
-{
-  prvSc = 5;
-  let vtorSc;
-  let tretSc;
-  {
-    vtorSc = 5;
-    rezultat = prvSc + vtorSc + tretSc;
-    console.log(rezultat);
-    {
-      tretSc = 5;
-    }
-  }
+let temperature = 26;
+if (temperature < 0) {
+  console.log("It's freezing!");
+} else if (temperature <= 15) {
+  console.log("It's cold.");
+} else if (temperature <= 25) {
+  console.log("Its warm.");
+} else {
+  console.log("Its hot!");
 }
+
+// Vezba 2
+let age = 60;
+if (age <= 2) {
+  console.log("Infant");
+} else if (age <= 12) {
+  console.log("Child");
+} else if (age <= 19) {
+  console.log("Teenager");
+} else if (age <= 59) {
+  console.log("Adult");
+} else {
+  console.log("Senior");
+}
+6;
+// Vezba 3
+
+let broj = 10;
+
+broj % 2 === 0
+  ? console.log("Brojot e paren")
+  : console.log("Brojot e neparen");
